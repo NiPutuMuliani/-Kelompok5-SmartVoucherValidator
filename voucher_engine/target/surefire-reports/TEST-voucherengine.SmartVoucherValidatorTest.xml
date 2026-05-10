@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="voucherengine.SmartVoucherValidatorTest" time="0.098" tests="33" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="voucherengine.SmartVoucherValidatorTest" time="0.051" tests="18" errors="18" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\acscd\AppData\Local\Temp\surefire7783587148992341900\surefirebooter12819755908433010841.jar C:\Users\acscd\AppData\Local\Temp\surefire7783587148992341900 2026-05-10T19-01-31_605-jvmRun1 surefire1594584819393985826tmp surefire_02124049420551730980tmp"/>
+    <property name="sun.java.command" value="C:\Users\acscd\AppData\Local\Temp\surefire9973003362017692888\surefirebooter10171265322030192953.jar C:\Users\acscd\AppData\Local\Temp\surefire9973003362017692888 2026-05-10T19-56-50_135-jvmRun1 surefire14102534820513159002tmp surefire_016885684693404226158tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\JAVA\-Kelompok5-SmartVoucherValidator\voucher_engine\target\test-classes;C:\JAVA\-Kelompok5-SmartVoucherValidator\voucher_engine\target\classes;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\acscd\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\acscd\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\acscd\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\acscd\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\acscd\AppData\Local\Temp\surefire7783587148992341900\surefirebooter12819755908433010841.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\acscd\AppData\Local\Temp\surefire9973003362017692888\surefirebooter10171265322030192953.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12-54"/>
@@ -58,37 +58,544 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testInvalidDateDay21" classname="voucherengine.SmartVoucherValidatorTest" time="0.034"/>
-  <testcase name="testInvalidDateDay31" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testWrongLength" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testEmptyVoucherCode" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testWrongPrefix" classname="voucherengine.SmartVoucherValidatorTest" time="0.002"/>
-  <testcase name="testRequestWithNullCode" classname="voucherengine.SmartVoucherValidatorTest" time="0.003"/>
-  <testcase name="testRequestWithNullDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testNullDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.002"/>
-  <testcase name="testNullVoucherCode" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testValidCodeWithInvalidDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testOddDigitSum" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testEvenDigitSum18" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testEvenDigitSum0" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testEvenDigitSum2" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testInvalidRequest" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testValidCodeWithValidDate" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testValidSpecialSymbols" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testNonSpecialSymbols" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testValidCodeFormat" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testNullTransactionDate" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testInvalidDateDay1" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testInvalidDateDay9" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testInvalidCodeWithValidDate" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testOddDigitSum1" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testNonNumericDigits" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testValidRequest" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testEndToEndWithBoundaryDates" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testValidDateDay10" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testValidDateDay15" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testValidDateDay20" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testValidDateRangeAnyMonth" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testMultipleValidCodes" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testNullRequest" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
+  <testcase name="testEmptyVoucherCode" classname="voucherengine.SmartVoucherValidatorTest" time="0.014">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testRequestWithNullCode" classname="voucherengine.SmartVoucherValidatorTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testRequestWithNullDate" classname="voucherengine.SmartVoucherValidatorTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testNullDate" classname="voucherengine.SmartVoucherValidatorTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testNullVoucherCode" classname="voucherengine.SmartVoucherValidatorTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testValidCodeWithInvalidDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testEvenDigitSum18" classname="voucherengine.SmartVoucherValidatorTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testEvenDigitSum0" classname="voucherengine.SmartVoucherValidatorTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testEvenDigitSum2" classname="voucherengine.SmartVoucherValidatorTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testInvalidRequest" classname="voucherengine.SmartVoucherValidatorTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testValidCodeWithValidDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testNullTransactionDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testInvalidCodeWithValidDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testValidRequest" classname="voucherengine.SmartVoucherValidatorTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testEndToEndWithBoundaryDates" classname="voucherengine.SmartVoucherValidatorTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testValidDateRangeAnyMonth" classname="voucherengine.SmartVoucherValidatorTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testMultipleValidCodes" classname="voucherengine.SmartVoucherValidatorTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
+  <testcase name="testNullRequest" classname="voucherengine.SmartVoucherValidatorTest" time="0.003">
+    <error message="Unresolved compilation problems: &#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	The import org.junit.jupiter.params cannot be resolved&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	Syntax error, insert &quot;}&quot; to complete MemberValueArrayInitializer&#10;	Syntax error, insert &quot;)&quot; to complete Modifier&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	CsvSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;	ParameterizedTest cannot be resolved to a type&#10;	ValueSource cannot be resolved to a type&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	The import org.junit.jupiter.params cannot be resolved
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	Syntax error, insert "}" to complete MemberValueArrayInitializer
+	Syntax error, insert ")" to complete Modifier
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	CsvSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+	ParameterizedTest cannot be resolved to a type
+	ValueSource cannot be resolved to a type
+
+	at voucherengine.SmartVoucherValidatorTest.<init>(SmartVoucherValidatorTest.java:10)
+]]></error>
+  </testcase>
 </testsuite>
