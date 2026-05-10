@@ -111,6 +111,28 @@ class SmartVoucherValidatorTest {
         assertFalse(SmartVoucherValidator.isValidVoucherCode("EXT246 #")); // space
     }
     
+    @ParameterizedTest
+    @ValueSource(strings = {
+    "EXT246@#",
+    "EXT246!$",
+    "EXT246%^",
+    "EXT246&*",
+    "EXT246()",
+    "EXT246_+",
+    "EXT246-=",
+    "EXT246[]",
+    "EXT246{}",
+    "EXT246|;",
+    "EXT246:'",
+    "EXT246\"<",
+    "EXT246>?",
+    "EXT246/.",
+    "EXT246~`"
+    })
+    @DisplayName("Valid special symbols should be accepted")
+    void testValidSpecialSymbols(String voucher) {
+    assertTrue(SmartVoucherValidator.isValidVoucherCode(voucher));
+}
     @Test
     @DisplayName("Valid special symbols should be accepted")
     void testValidSpecialSymbols() {

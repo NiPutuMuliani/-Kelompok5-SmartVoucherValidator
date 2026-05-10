@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="voucherengine.SmartVoucherValidatorTest" time="0.089" tests="33" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="voucherengine.SmartVoucherValidatorTest" time="0.081" tests="33" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\JAVA\-Kelompok5-SmartVoucherValidator\voucher_engine\target\test-classes;C:\JAVA\-Kelompok5-SmartVoucherValidator\voucher_engine\target\classes;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\acscd\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\acscd\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\acscd\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\acscd\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;"/>
+    <property name="java.class.path" value="C:\JAVA\-Kelompok5-SmartVoucherValidator\voucher_engine\target\test-classes;C:\JAVA\-Kelompok5-SmartVoucherValidator\voucher_engine\target\classes;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\acscd\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\acscd\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\acscd\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\acscd\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\acscd\AppData\Local\Temp\surefire16016468906291017389\surefirebooter3396484202817117424.jar C:\Users\acscd\AppData\Local\Temp\surefire16016468906291017389 2026-05-10T20-17-26_920-jvmRun1 surefire14357972448455061493tmp surefire_09222484550136257884tmp"/>
+    <property name="sun.java.command" value="C:\Users\acscd\AppData\Local\Temp\surefire16141911614620678885\surefirebooter6546074907726073384.jar C:\Users\acscd\AppData\Local\Temp\surefire16141911614620678885 2026-05-10T20-26-22_701-jvmRun1 surefire12608321671047604444tmp surefire_01581013490276525432tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\JAVA\-Kelompok5-SmartVoucherValidator\voucher_engine\target\test-classes;C:\JAVA\-Kelompok5-SmartVoucherValidator\voucher_engine\target\classes;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\acscd\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\acscd\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\acscd\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\acscd\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\JAVA\-Kelompok5-SmartVoucherValidator\voucher_engine\target\test-classes;C:\JAVA\-Kelompok5-SmartVoucherValidator\voucher_engine\target\classes;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\acscd\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\acscd\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\acscd\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\acscd\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\acscd\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\acscd"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\acscd\AppData\Local\Temp\surefire16016468906291017389\surefirebooter3396484202817117424.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\acscd\AppData\Local\Temp\surefire16141911614620678885\surefirebooter6546074907726073384.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12-54"/>
@@ -58,37 +58,37 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testInvalidDateDay21" classname="voucherengine.SmartVoucherValidatorTest" time="0.032"/>
+  <testcase name="testInvalidDateDay21" classname="voucherengine.SmartVoucherValidatorTest" time="0.033"/>
   <testcase name="testInvalidDateDay31" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testWrongLength" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testWrongLength" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
   <testcase name="testEmptyVoucherCode" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testWrongPrefix" classname="voucherengine.SmartVoucherValidatorTest" time="0.003"/>
-  <testcase name="testRequestWithNullCode" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testRequestWithNullDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.003"/>
-  <testcase name="testNullDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testNullVoucherCode" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testValidCodeWithInvalidDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testOddDigitSum" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
+  <testcase name="testWrongPrefix" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
+  <testcase name="testRequestWithNullCode" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
+  <testcase name="testRequestWithNullDate" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testNullDate" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testNullVoucherCode" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testValidCodeWithInvalidDate" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testOddDigitSum" classname="voucherengine.SmartVoucherValidatorTest" time="0.002"/>
   <testcase name="testEvenDigitSum18" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
   <testcase name="testEvenDigitSum0" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
   <testcase name="testEvenDigitSum2" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testInvalidRequest" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testValidCodeWithValidDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testValidSpecialSymbols" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testNonSpecialSymbols" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
+  <testcase name="testInvalidRequest" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testValidCodeWithValidDate" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testValidSpecialSymbols" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
+  <testcase name="testNonSpecialSymbols" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
   <testcase name="testValidCodeFormat" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testNullTransactionDate" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testInvalidDateDay1" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testInvalidDateDay9" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
+  <testcase name="testNullTransactionDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
+  <testcase name="testInvalidDateDay1" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testInvalidDateDay9" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
   <testcase name="testInvalidCodeWithValidDate" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testOddDigitSum1" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testNonNumericDigits" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testOddDigitSum1" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testNonNumericDigits" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
   <testcase name="testValidRequest" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
   <testcase name="testEndToEndWithBoundaryDates" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
-  <testcase name="testValidDateDay10" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testValidDateDay10" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
   <testcase name="testValidDateDay15" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testValidDateDay20" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testValidDateRangeAnyMonth" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
-  <testcase name="testMultipleValidCodes" classname="voucherengine.SmartVoucherValidatorTest" time="0.001"/>
+  <testcase name="testValidDateDay20" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testValidDateRangeAnyMonth" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
+  <testcase name="testMultipleValidCodes" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
   <testcase name="testNullRequest" classname="voucherengine.SmartVoucherValidatorTest" time="0"/>
 </testsuite>
