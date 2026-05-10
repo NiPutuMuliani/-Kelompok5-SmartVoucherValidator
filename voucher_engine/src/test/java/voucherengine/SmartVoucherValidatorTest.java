@@ -1,4 +1,3 @@
-DOKUMEN_TEST_KELOMPOK5.txt
 package voucherengine;
 
 import java.time.LocalDate;
@@ -133,7 +132,6 @@ class SmartVoucherValidatorTest {
     }
     
     
-    
     @Test
     @DisplayName("Digit sum of 0 should be even")
     void testEvenDigitSum0() {
@@ -163,7 +161,7 @@ class SmartVoucherValidatorTest {
         assertFalse(SmartVoucherValidator.isValidVoucherCode("EXT100@#"));
     }
     
-    
+   
     
     @Test
     @DisplayName("Date on day 10 should be valid")
@@ -216,11 +214,11 @@ class SmartVoucherValidatorTest {
     @Test
     @DisplayName("Valid date range works for any month")
     void testValidDateRangeAnyMonth() {
-        
+        // January
         assertTrue(SmartVoucherValidator.isValidTransactionDate(LocalDate.of(2026, 1, 15)));
-        
+        // February (leap year)
         assertTrue(SmartVoucherValidator.isValidTransactionDate(LocalDate.of(2024, 2, 15)));
-        
+        // December
         assertTrue(SmartVoucherValidator.isValidTransactionDate(LocalDate.of(2026, 12, 15)));
     }
     
@@ -276,19 +274,19 @@ class SmartVoucherValidatorTest {
     void testEndToEndWithBoundaryDates() {
         String validCode = "EXT468!$";
         
-        
+       
         assertTrue(SmartVoucherValidator.validateVoucher(validCode, LocalDate.of(2026, 5, 10)));
         
-        
+       
         assertTrue(SmartVoucherValidator.validateVoucher(validCode, LocalDate.of(2026, 5, 15)));
         
-       
+        
         assertTrue(SmartVoucherValidator.validateVoucher(validCode, LocalDate.of(2026, 5, 20)));
         
         
         assertFalse(SmartVoucherValidator.validateVoucher(validCode, LocalDate.of(2026, 5, 9)));
         
-        
+       
         assertFalse(SmartVoucherValidator.validateVoucher(validCode, LocalDate.of(2026, 5, 21)));
     }
 }
